@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity">
+
+    <View
+        android:id="@+id/view_wave"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:background="@color/ucla_gold"
+        app:layout_constraintBottom_toTopOf="@+id/view_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view_top"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@drawable/game_image"
+        app:layout_constraintBottom_toTopOf="@+id/scrlview_mid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vec_back" />
+
+    <TextView
+        android:layout_width="257dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="serif"
+        android:text="Registration"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view_wave" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="81dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vec_reg" />
+
+    <ScrollView
+        android:id="@+id/scrlview_mid"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_top"
+        >
+
+    <LinearLayout
+        android:layout_width="407dp"
+        android:layout_height="728dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="30dp"
+        android:paddingRight="20dp">
+
+        <EditText
+            android:id="@+id/input_f_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/round_border"
+            android:drawableStart="@drawable/vec_input"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="First Name"
+            android:inputType="text"
+            android:paddingLeft="30dp"
+            android:textColor="#170C0C" />
+
+        <EditText
+            android:id="@+id/input_l_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_border"
+            android:drawableStart="@drawable/vec_input"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Last Name"
+            android:inputType="text"
+            android:paddingLeft="30dp"
+            android:textColor="#170C0C" />
+
+        <EditText
+            android:id="@+id/input_dob"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_border"
+            android:drawableStart="@drawable/vec_dob"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="DOB YYYY-MM-DD"
+            android:inputType="text"
+            android:paddingLeft="30dp"
+            android:textColor="#170C0C" />
+
+        <EditText
+            android:id="@+id/input_log_email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_border"
+            android:drawableStart="@drawable/vec_email"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="text"
+            android:paddingLeft="30dp"
+            android:textColor="#170C0C" />
+
+        <EditText
+            android:id="@+id/input_log_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_border"
+            android:drawableStart="@drawable/vec_password"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="30dp"
+            android:textColor="#170C0C" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/round_btn"
+            android:shadowDx="10"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
